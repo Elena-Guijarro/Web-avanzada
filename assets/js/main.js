@@ -11,5 +11,32 @@ function stopClock() {
 /*****************************************/
 
 window.onload = function () { 
-    console.log("Hello, world!");
+    /***console.log("Hello, world!");
+    console.log(Math.random());***/
+
+
+const miReloj=document.getElementById("clock");
+console.log(miReloj);
+console.dir(miReloj);
+
+miReloj.innerText="Holaaaaaaaa soy elena";
+
+const headers = document.getElementsByTagName("h1");
+console.dir(headers[0]);
+
 }
+
+function randInt(min,max) {
+    return Math.floor(Math.random()* (max-min + 1))+min;
+    
+}
+
+function changeEmojiColor(elem){
+    const r= randInt(0,255);
+    const g= randInt(0,255);
+    const b= randInt(0,255);
+    elem.style.fill="rgb("+r+","+g+","+b+")";
+
+
+}
+
